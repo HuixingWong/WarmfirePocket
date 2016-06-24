@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.activity.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#0ed4c1" >
+
+        <TextView
+            android:id="@+id/txt_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="月利润"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt_zhuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txt_month"
+            android:layout_centerHorizontal="true"
+            android:text="0.00"
+            android:textColor="#ffffff"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/txt_yye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_in"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/txt_zhuan"
+            android:text="月营业额"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/txt_yye"
+            android:layout_below="@+id/txt_month"
+            android:layout_marginRight="14dp"
+            android:text="0.00"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_in"
+            android:layout_marginLeft="34dp"
+            android:layout_toRightOf="@+id/txt_zhuan"
+            android:text="0.00"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_yye"
+            android:layout_alignBottom="@+id/txt_yye"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/txt_zhuan"
+            android:text="月成本额"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1"
+        android:layout_above="@+id/rl2" >
+        
+    </ListView>
+
+    
+
+</RelativeLayout>

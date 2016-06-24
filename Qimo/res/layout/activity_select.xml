@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical" >
+    	
+	<LinearLayout 	
+	    android:id="@+id/lllout1"    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:orientation="vertical" >
+	    
+	    <TextView 
+	    android:id="@+id/txt1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="18dp"
+	    android:text="请输入起始时间：" />
+	    
+	    <LinearLayout 
+		    android:id="@+id/llout1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	    	android:layout_marginTop="10dp"
+		    android:layout_below="@id/txt1"
+		    android:orientation="horizontal" >
+		    
+		    <TextView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="年份：" />
+		    
+		    <EditText
+		        android:id="@+id/txt_syear"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+	        	android:inputType="number"
+			    android:background="@drawable/bg_edittext"
+			    android:padding="5dip"  
+			    android:textColorHint="#AAAAAA"  
+			    android:textSize="15dip"  
+			    android:singleLine="true"  
+		    	android:hint="如：2016" />
+		    
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:id="@+id/llout2"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	    	android:layout_marginTop="10dp"
+		    android:layout_below="@id/llout1"
+		    android:orientation="horizontal" >
+		    
+		    <TextView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="月份：" />
+		    
+		    <EditText
+		        android:id="@+id/txt_smonth"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content" 
+	        	android:inputType="number"
+			    android:background="@drawable/bg_edittext"
+			    android:padding="5dip"  
+			    android:textColorHint="#AAAAAA"  
+			    android:textSize="15dip"  
+			    android:singleLine="true"  
+		    	android:hint="如：5" />
+		    
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:id="@+id/llout3"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	    	android:layout_marginTop="10dp"
+		    android:layout_below="@id/llout2"
+		    android:orientation="horizontal" >
+		    
+		    <TextView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="日期：" />
+		    
+		    <EditText
+		        android:id="@+id/txt_sday"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content" 
+	        	android:inputType="number"
+			    android:background="@drawable/bg_edittext"
+			    android:padding="5dip"  
+			    android:textColorHint="#AAAAAA"  
+			    android:textSize="15dip"  
+			    android:singleLine="true"  
+		    	android:hint="如：20" />
+		    
+		</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 	
+	    android:id="@+id/lllout2"    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:layout_toRightOf="@id/lllout1"
+	    android:orientation="vertical" >
+	    
+	    <TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="18dp"
+	    android:text="请输入截止时间：" />
+	    
+	    <LinearLayout 
+		    android:id="@+id/llout1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	    	android:layout_marginTop="10dp"
+		    android:layout_below="@id/txt1"
+		    android:orientation="horizontal" >
+		    
+		    <TextView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="年份：" />
+		    
+		    <EditText
+		        android:id="@+id/txt_eyear"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+	        	android:inputType="number"
+			    android:background="@drawable/bg_edittext"
+			    android:padding="5dip"  
+			    android:textColorHint="#AAAAAA"  
+			    android:textSize="15dip"  
+			    android:singleLine="true"  
+		    	android:hint="如：2016" />
+		    
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:id="@+id/llout2"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/llout1"
+	    	android:layout_marginTop="10dp"
+		    android:orientation="horizontal" >
+		    
+		    <TextView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="月份：" />
+		    
+		    <EditText
+		        android:id="@+id/txt_emonth"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content" 
+	        	android:inputType="number"
+			    android:background="@drawable/bg_edittext"
+			    android:padding="5dip"  
+			    android:textColorHint="#AAAAAA"  
+			    android:textSize="15dip"  
+			    android:singleLine="true"  
+		    	android:hint="如：5" />
+		    
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:id="@+id/llout3"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	    	android:layout_marginTop="10dp"
+		    android:layout_below="@id/llout2"
+		    android:orientation="horizontal" >
+		    
+		    <TextView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="日期：" />
+		    
+		    <EditText
+		        android:id="@+id/txt_eday"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content" 
+	        	android:inputType="number"
+			    android:background="@drawable/bg_edittext"
+			    android:padding="5dip"  
+			    android:textColorHint="#AAAAAA"  
+			    android:textSize="15dip"  
+			    android:singleLine="true"  
+		    	android:hint="如：20" />
+		    
+		</LinearLayout>
+	</LinearLayout>
+	
+	 <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+	<Button
+	    android:id="@+id/btn_select"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/lllout1"
+	    android:background="@drawable/cursore"
+        android:layout_marginRight="10dp"
+	    android:layout_centerHorizontal="true"
+	    android:text="查找" />
+	
+	<Button
+	    android:id="@+id/btn_selectback"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/btn_select"
+	    android:background="@drawable/unselect"
+        android:layout_marginLeft="10dp"
+	    android:layout_centerHorizontal="true"
+	    android:text="返回" />
+    
+	
+    </LinearLayout>
+	
+</LinearLayout>

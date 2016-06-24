@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bmiv3.MainActivity" >
+     
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bd"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center" />
+    
+    <LinearLayout  
+        android:id="@+id/top_ly"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >  
+  
+        <TextView   
+            android:id="@+id/textView1"  
+            android:layout_weight="1"  
+            android:layout_width="wrap_content"  
+            android:layout_height="50dp" 
+            android:background="#999999"  
+            android:gravity="center"  
+            android:text="日账单"  
+            android:textColor="#222222"  
+        />  
+    
+	    <RelativeLayout
+	        android:id="@+id/rl2"
+            android:layout_weight="1"  
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content">
+	
+	        <Button
+	            android:id="@+id/btn_add"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:layout_centerInParent="true"
+	            android:layout_margin="10dp"
+	            android:background="#f5a01f"
+	            android:text="记"
+	            android:textColor="#ffffff"
+	            android:textSize="20dp" />
+
+	    </RelativeLayout>
+    
+        <TextView   
+            android:id="@+id/textView2"  
+            android:layout_weight="1"  
+            android:layout_width="wrap_content"  
+            android:layout_height="50dp"  
+            android:background="#999999"  
+            android:gravity="center"  
+            android:text="月账单"  
+            android:textColor="#222222"  
+            />
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bd"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/top_ly"
+        android:layout_alignParentLeft="true"
+        android:background="#88888888" />
+
+</RelativeLayout>

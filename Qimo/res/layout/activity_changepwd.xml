@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cp_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="  旧密码：   "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txt_oldpwd"            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right" 
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:hint="请输入旧密码"
+            android:textColorHint="#AAAAAA"
+            android:textSize="20dip"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cp_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cp_ll1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="  新密码：   "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txt_newpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_edittext"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cp_ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cp_ll2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/password" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="  确认密码："
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txt_againpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_edittext"
+            android:hint="请确认密码"
+            android:inputType="textPassword"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cp_ll4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cp_ll3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cursore"
+            android:text="更改" />
+
+        <Button
+            android:id="@+id/cp_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/unselect"
+            android:text="返回" />
+    </LinearLayout>    
+
+</RelativeLayout>

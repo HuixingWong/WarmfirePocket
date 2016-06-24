@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:id="@+id/rs_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+			    android:background="@drawable/bg_edittext"
+			    android:padding="5dip"  
+			    android:textColorHint="#AAAAAA"  
+			    android:textSize="20dip"  
+			    android:singleLine="true"  
+        android:layout_margin="10dp"
+        android:hint="用户名" />
+    
+    <EditText 
+        android:id="@+id/rs_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+			    android:background="@drawable/bg_edittext"
+			    android:padding="5dip"  
+			    android:textColorHint="#AAAAAA"  
+			    android:textSize="20dip"  
+			    android:singleLine="true"  
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        android:hint="密码" />
+    
+    <EditText 
+        android:id="@+id/rs_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+			    android:background="@drawable/bg_edittext"
+			    android:padding="5dip"  
+			    android:textColorHint="#AAAAAA"  
+			    android:textSize="20dip"  
+			    android:singleLine="true"  
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        android:hint="确认密码" />
+    
+    <Button
+        android:id="@+id/rs_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/registerbg"
+        android:layout_margin="10dp"
+        android:text="注册"
+        android:textColor="#FFFFFF" />
+    
+    <Button
+        android:id="@+id/rs_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/loginbg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="登录"
+        android:textColor="#F19149" />
+
+</LinearLayout>
